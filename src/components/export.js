@@ -10,7 +10,7 @@ export const pizza = [
     image: cheese,
     title: "Pizza de Queijo",
     para: "Experimente nossa Manhattan Classic Cheese Pizza com sua escolha de molho e massa.",
-    price: "R$ 1,48",
+    price: "R$ 10,48",
   },
   {
     image: delicious,

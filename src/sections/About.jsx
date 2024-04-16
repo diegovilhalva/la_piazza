@@ -49,7 +49,7 @@ const About = () => {
         <div className="flex flex-col justify-center items-center gap-8">
             <h1 data-aos="zoom-in" className="text-2xl text-black dark:text-white font-semibold text-center">Bem vindo a</h1>
             <h1 data-aos="zoom-in" className="text-6xl text-black dark:text-white font-bold text-center">La Piazza Pizzaria</h1>
-            <p data-aos="zoom-in" className="text-xl text-slate-800 dark:text-slate-100 text-center">Na nossa pizzaria, cada fatia é uma experiência única, preparada com ingredientes frescos e paixão, para satisfazer os mais exigentes paladares</p>
+            <p data-aos="zoom-in" className="text-xl text-slate-800 dark:text-slate-100 text-center ">Na nossa pizzaria, cada fatia é uma experiência única, preparada com ingredientes frescos e paixão, para satisfazer os mais exigentes paladares</p>
             <button data-aos="flip-up" className="bg-orange-500 text-lg text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-black dark:hover:text-black">Peça já</button>
         </div>
       </section>
