@@ -21,22 +21,22 @@ const About = () => {
   return (
     <>
       <section id="about" className={`${darkMode ? 'dark bg-black' : 'light bg-white'} w-full lg:px-20 px-10 lg:py-20 py-10 h-fit grid lg:grid-cols-4 grid-cols-1 justify-center items-center gap-10`}>
-        <div data-aos="zoom-in" data-aos-delay="200" className="border-[4px]  border-orange-600 dark:border-orange-400 p-14 flex  flex-col justify-center items-center gap-6 rounded-lg hover:bg-orange-100 cursor-point">
+        <div data-aos="zoom-in" data-aos-delay="200" className="border-[4px]  border-orange-600 dark:border-orange-400 p-14 flex  flex-col justify-center items-center gap-6 rounded-lg hover:bg-orange-300 cursor-point">
           <img src={icon1} alt="pizza icon" className="w-[80px] h-[80px] transform hover:scale-105
           transition-transform duration-300 cursor-pointer" />
           <h1 className="text-black dark:text-white text-2xl font-lg  text-center">Os Melhores Sabores</h1>
         </div>
-        <div data-aos="zoom-in" data-aos-delay="200" className="border-[4px]  border-orange-600 dark:border-orange-400 p-14 flex  flex-col justify-center items-center gap-6 rounded-lg hover:bg-orange-100 cursor-point">
+        <div data-aos="zoom-in" data-aos-delay="200" className="border-[4px]  border-orange-600 dark:border-orange-400 p-14 flex  flex-col justify-center items-center gap-6 rounded-lg hover:bg-orange-300 cursor-point">
           <img src={icon2} alt="pizza icon" className="w-[80px] h-[80px] transform hover:scale-105
           transition-transform duration-300 cursor-pointer" />
           <h1 className="text-black dark:text-white text-2xl font-lg  text-center">Ingedientes Organicos</h1>
         </div>
-        <div data-aos="zoom-in" data-aos-delay="200" className="border-[4px]  border-orange-600 dark:border-orange-400 p-14 flex  flex-col justify-center items-center gap-6 rounded-lg hover:bg-orange-100 cursor-point">
+        <div data-aos="zoom-in" data-aos-delay="200" className="border-[4px]  border-orange-600 dark:border-orange-400 p-14 flex  flex-col justify-center items-center gap-6 rounded-lg hover:bg-orange-300 cursor-point">
           <img src={icon3} alt="pizza icon" className="w-[80px] h-[80px] transform hover:scale-105
           transition-transform duration-300 cursor-pointer" />
-          <h1 className="text-black dark:text-white text-2xl font-lg  text-center">Agilidade na Produção</h1>
+          <h1 className="text-black dark:text-white  text-2xl font-lg  text-center">Agilidade na Produção</h1>
         </div>
-        <div data-aos="zoom-in" data-aos-delay="200" className="border-[4px]  border-orange-600 dark:border-orange-400 p-14 flex  flex-col justify-center items-center gap-6 rounded-lg hover:bg-orange-100 cursor-point">
+        <div data-aos="zoom-in" data-aos-delay="200" className="border-[4px]  border-orange-600 dark:border-orange-400 p-14 flex  flex-col justify-center items-center gap-6 rounded-lg hover:bg-orange-300 cursor-point">
           <img src={icon4} alt="pizza icon" className="w-[80px] h-[80px] transform hover:scale-105
           transition-transform duration-300 cursor-pointer" />
           <h1 className="text-black dark:text-white text-2xl font-lg  text-center">Massas Caseiras</h1>
