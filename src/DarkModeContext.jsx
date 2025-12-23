@@ -1,30 +1,36 @@
-import { createContext,useContext,useState } from "react";
+import { createContext, useContext, useState, useEffect } from "react";
 
-const DarkModeContext = createContext()
+const DarkModeContext = createContext();
 
-const DarkModeProvider = ({children}) => {
-    const [darkMode,setDarkMode] = useState(false)
-
+const DarkModeProvider = ({ children }) => {
+  
+    const [darkMode, setDarkMode] = useState(() => {
+        const savedMode = localStorage.getItem('darkMode');
+        return savedMode ? JSON.parse(savedMode) : false;
+    });
+    
+   
+    useEffect(() => {
+        localStorage.setItem('darkMode', JSON.stringify(darkMode));
+    }, [darkMode]);
+    
     const toggleDarkMode = () => {
-        setDarkMode(!darkMode)
-
-
-    }
-
+        setDarkMode(!darkMode);
+    };
+    
     return (
-        <DarkModeContext.Provider value={{darkMode,toggleDarkMode}}>
+        <DarkModeContext.Provider value={{ darkMode, toggleDarkMode }}>
             {children}
         </DarkModeContext.Provider>
-    )
-}
+    );
+};
 
 const useDarkMode = () => {
-    const coxtext = useContext(DarkModeContext)
-    if(!coxtext) {
-        throw new Error('useDarkmode deve estar dentro DarkModeProvider')
+    const context = useContext(DarkModeContext);
+    if (!context) {
+        throw new Error('useDarkMode deve estar dentro de DarkModeProvider');
     }
+    return context;
+};
 
-    return coxtext
-}
-
-export {DarkModeProvider,useDarkMode}
+export { DarkModeProvider, useDarkMode };
